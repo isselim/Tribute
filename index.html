@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Leonardo da Vinci</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tribute to Leonardo da Vinci</h1>
+    </header>
+
+    <section>
+        <div id="slideshow-container">
+            <div class="mySlides">
+                <img src="image1.jpeg" alt="Leonardo da Vinci - Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="image2.jpeg" alt="Leonardo da Vinci - Image 2">
+            </div>
+            <div class="mySlides">
+                <img src="image3.jpeg" alt="Leonardo da Vinci - Image 3">
+            </div>
+            <div class="mySlides">
+                <img src="image4.jpeg" alt="Leonardo da Vinci - Image 4">
+            </div>
+            <!-- Add more slides as needed -->
+
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            
+ <h2>Selected Artworks</h2>
+
+        <div class="art-gallery">
+            <div class="artwork" onclick="toggleDescription(this)">
+                <img src="mona_lisa.jpeg" alt="Mona Lisa">
+                <p class="art-description"><strong>Mona Lisa</strong> - The iconic portrait known for its enigmatic smile.</p>
+            </div>
+            <div class="artwork" onclick="toggleDescription(this)">
+                <img src="last_supper.jpeg" alt="The Last Supper">
+                <p class="art-description"><strong>The Last Supper</strong> - A masterpiece depicting the moment Jesus announces that one of his disciples will betray him.</p>
+            </div>
+            <div class="artwork" onclick="toggleDescription(this)">
+                <img src="vitruvian_man.jpeg" alt="Vitruvian Man">
+                <p class="art-description"><strong>Vitruvian Man</strong> - A study of the proportions of the human body within both a square and a circle.</p>
+            </div>
+            <div class="artwork" onclick="toggleDescription(this)">
+                <img src="annunciation.jpeg" alt="The Annunciation">
+                <p class="art-description"><strong>The Annunciation</strong> - Depicts the angel Gabriel announcing to the Virgin Mary that she will conceive the Son of God.</p>
+            </div>
+            <div class="artwork" onclick="toggleDescription(this)">
+                <img src="lady_with_an_ermine.jpeg" alt="Lady with an Ermine">
+                <p class="art-description"><strong>Lady with an Ermine</strong> - A portrait of Cecilia Gallerani, a young woman in the Milanese court who holds an ermine.</p>
+            </div>
+           
+            <!-- Add more artworks as needed -->
+        </div>
+
+        <p>
+            Leonardo da Vinci, born on April 15, 1452, in Vinci, Italy, was a true polymath of the Renaissance era. His incredible talents spanned art, science, engineering, anatomy, and many other disciplines.
+        </p>
+
+        <p>
+            Da Vinci's artistic brilliance is evident in masterpieces like the "Mona Lisa" and "The Last Supper." His paintings are celebrated for their meticulous detail, innovative techniques, and the profound emotion conveyed in each brushstroke.
+        </p>
+
+        <p>
+            Beyond his artistic endeavors, da Vinci was a pioneer in various scientific fields. His notebooks are filled with detailed sketches and observations on anatomy, engineering designs, and scientific concepts. His curiosity knew no bounds.
+        </p>
+
+        <p>
+            Leonardo da Vinci's legacy extends to his contributions in engineering and invention. His designs for flying machines, bridges, and various mechanical devices reflected a visionary mind well ahead of his time.
+        </p>
+
+        <p>
+            This tribute stands as a homage to the genius of Leonardo da Vinci, a man whose insatiable curiosity, creativity, and innovation continue to inspire and captivate the world.
+        </p>
+    </section>
+
+    <footer>
+        <p>Published by Victor M.K &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f8f8f8; 
+    background-image: url('background.jpeg'); 
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -30px;
+}
+
+#slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    animation: fade 1.5s ease-in-out infinite; 
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #333;
+    color: #080707;
+}
+.art-description {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.artwork {
+    position: relative;
+    overflow: hidden;
+}
+
+.artwork img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.artwork:hover img {
+    transform: scale(1.1); 
+}
+
+.artwork:hover .art-description {
+    display: block;
+}
